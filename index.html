@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TinDog</title>
+  <title>PupCycle</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -12,94 +12,61 @@
 
 <body>
 
-  <!-- Header -->
-  <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg
-          class="bi me-2" width="40" height="32" aria-hidden="true">
-          <use xlink:href="#bootstrap"></use>
-        </svg> <span class="fs-4"><img src="images/image.svg" height="25" alt=""> Simple header</span> </a>
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </header>
-  </div>
-
-  <!-- Title -->
-  <section class="gradient-background" id="title">
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6"> <img src="images/iphone.png" class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes" width="700" height="500" loading="lazy"> </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-            popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> <button type="button"
-              class="btn btn-outline-secondary btn-lg px-4">Default</button> </div>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🐾 PupCycle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#how">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">Why PupCycle</a></li>
+          <li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-2" href="#cta">Get Started</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="text-center bg-light py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Give Old Toys a New Leash on Life</h1>
+      <p class="lead">Recycle, trade, and refresh your pup’s favorite gear — sustainable for the planet, playful for
+        your dog.</p>
+      <a href="#subscribe" class="btn btn-primary btn-lg me-2">Get Started</a>
+      <a href="#how" class="btn btn-outline-secondary btn-lg">How It Works</a>
     </div>
   </section>
 
-  <!-- Features -->
-  <section id="features">
-    <div class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Features with title</h2>
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <div class="col d-flex flex-column align-items-start gap-2">
-          <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
-          <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it
-            with another sentence and probably just keep going until we run out of words.</p> <a href="#"
-            class="btn btn-primary btn-lg">Primary button</a>
+  <!-- How It Works -->
+  <section id="how" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">How It Works</h2>
+      <div class="row g-4">
+        <div class="col-md-4 text-center">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">1. Donate & Trade</h5>
+              <p>Send us your pup’s gently used toys, leashes, or gear.</p>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <div class="row row-cols-1 row-cols-sm-2 g-4">
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                  <use xlink:href="#collection"></use>
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+        <div class="col-md-4 text-center">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">2. Refurbish & Refresh</h5>
+              <p>We sanitize, repair, or upcycle items to make them safe and fun again.</p>
             </div>
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                  <use xlink:href="#gear-fill"></use>
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                  <use xlink:href="#speedometer"></use>
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                  <use xlink:href="#table"></use>
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">3. Play It Forward</h5>
+              <p>Choose from our toy library or get a monthly subscription box.</p>
             </div>
           </div>
         </div>
@@ -107,19 +74,124 @@
     </div>
   </section>
 
-  <!-- Testimonial -->
-  <section id="testimonial">
-
+  <!-- Why Choose PupCycle -->
+  <section id="why" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Why PupCycle?</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <h5>♻️ Eco-Friendly</h5>
+          <p>Every toy saved reduces waste in landfills.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>🐾 Safe & Clean</h5>
+          <p>All items are professionally sanitized.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>💸 Budget-Friendly</h5>
+          <p>High-quality play at a fraction of the cost.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>🌎 Community Impact</h5>
+          <p>We donate extra toys to shelters in need.</p>
+        </div>
+      </div>
+    </div>
   </section>
+
   <!-- Pricing -->
-  <section id="pricing">
-
+  <section id="subscribe" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">A New Box of Joy Every Month</h2>
+      <p class="mb-5">Curated upcycled toys, eco-friendly chews, and surprises delivered to your door.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Small Pup Box</h5>
+              <p>1–2 toys + treat</p>
+              <a href="#" class="btn btn-outline-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Active Pup Box</h5>
+              <p>3–4 toys + chews</p>
+              <a href="#" class="btn btn-outline-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Eco Hero Box</h5>
+              <p>Premium upcycled gear + extras</p>
+              <a href="#" class="btn btn-outline-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Stat counter-->
+  <section class="bg-dark text-light py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Our Impact Together</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="fw-bold">5,420</h3>
+          <p>Toys Saved</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="fw-bold">2,150</h3>
+          <p>Pups Smiling</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="fw-bold">3,800 lbs</h3>
+          <p>Waste Diverted</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Happy Pups, Happy Planet</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <blockquote class="blockquote p-3 border rounded shadow-sm">
+            “PupCycle keeps our golden retriever busy *and* makes us feel good about reusing!”
+            <footer class="blockquote-footer">Sarah & Max</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote p-3 border rounded shadow-sm">
+            “I love that I’m saving money and helping shelters at the same time.”
+            <footer class="blockquote-footer">James & Bella</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="bg-primary text-light text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold">Ready to PupCycle?</h2>
+      <p class="lead">Turn old toys into new adventures — your dog (and the planet) will thank you.</p>
+      <a href="#" class="btn btn-light btn-lg">Start Recycling Today</a>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <section id="footer">
-
-  </section>
-
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 PupCycle | Built with Bootstrap</p>
+    </div>
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
