@@ -29,31 +29,54 @@
 
 /* 🌿 Custom PupCycle Theme */
     :root {
-      --pup-green: #4CAF50;
-      --pup-light-green: #a8e6a1;
-      --pup-dark: #1b1b1b;
-      --pup-accent: #ffd166; /* playful yellow */
+      --pr-oak: #d4a574;
+      --pr-green:  #4a7c59;
+      --pr-light-green: #A8D5BA;
+      --pr-yellow: #F4D03F;
+
+      --sd-brown: #8B4513;
+      --sd-coral: #FF6B6B;
+      --sd-aqua: #4ECDC4;
+      --sd-blue: #45B7D1;
+
+      --nt-white: #FDF6E3;
+      --nt-beige: #F5E6D3;
     }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
+    .btn-main {
+      background-color: var(--pr-green);
+      color: white;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+    }
+
+    .btn-main:hover {
+      background-color: var(--pr-oak);
+      color: var(--nt-white);
+    }
     
-    .btn-pup {
-      background: var(--pup-green);
-      color: white;
-      border-radius: 30px;
-      transition: transform 0.2s;
+    .btn-outline {
+      background-color: transparent;
+      color: var(--pr-green);
+      border: 2px solid var(--pr-green);
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
     }
-    .btn-pup:hover {
-      transform: scale(1.05);
-      background: #43a047;
+
+    .btn-outline:hover {
+      background-color: var(--pr-oak);
+      color: var(--nt-white);
     }
+
     .hero {
-      color: white;
-      min-height: 85vh;
+      min-height: 100vh;
       display: flex;
-      align-items: center;
-      text-align: center;
     }
 
     .impact-box {
