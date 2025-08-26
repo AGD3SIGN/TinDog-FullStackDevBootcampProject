@@ -131,8 +131,22 @@
     --bs-form-valid-color: #28a745;
     --bs-form-valid-border-color: #28a745;
     --bs-form-invalid-color: #dc3545;
-    --bs-form-invalid-border-color: #dc3545
+
+    --bs-form-invalid-border-color: #dc3545 --pr-oak: #d4a574;
+
+    --pr-green: #4a7c59;
+    --pr-light-green: #A8D5BA;
+    --pr-yellow: #F8F93F;
+
+    --sd-brown: #8B4513;
+    --sd-coral: #FF6B6B;
+    --sd-aqua: #4ECDC4;
+    --sd-blue: #45B7D1;
+
+    --nt-white: #FDF6E3;
+    --nt-beige: #F5E6D3;
 }
+
 
 [data-bs-theme=dark] {
     color-scheme: dark;
@@ -3568,8 +3582,8 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #555;
+    --bs-btn-color: var(--bs-link-hover-color);
+    --bs-btn-bg: var(--pr-yellow);
     --bs-btn-border-color: #555;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #484848;
@@ -4584,6 +4598,12 @@ fieldset:disabled .btn {
     white-space: nowrap
 }
 
+.navbar-brand i,
+.offcanvas-title i {
+    color: var(--pr-green);
+    font-size: 2rem;
+}
+
 .navbar-brand:focus,
 .navbar-brand:hover {
     color: var(--bs-navbar-brand-hover-color)
@@ -4591,7 +4611,7 @@ fieldset:disabled .btn {
 
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
-    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-padding-y: 00.5rem;
     --bs-nav-link-font-weight: ;
     --bs-nav-link-color: var(--bs-navbar-color);
     --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
@@ -13954,7 +13974,11 @@ fieldset:disabled .btn {
 .navbar-brand {
     font-family: "Cabin Sketch", cursive;
     font-weight: 400;
-    text-decoration: none
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {

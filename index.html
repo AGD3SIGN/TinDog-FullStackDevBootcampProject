@@ -10,53 +10,55 @@
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
-        aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
+  <div class="container">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="ri-recycle-fill"></i> PupCycle</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="ri-recycle-fill"></i> PupCycle</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how">How it works!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why">Why PupCycle?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#subscribe">Subscribe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+
+  </div>
+
+
 
   <!-- Hero Section -->
   <div class="container hero col-xxl-8 px-4 py-5">
@@ -69,7 +71,9 @@
         <p class="lead">PupCycle makes playtime sustainable with pre-loved and eco-friendly toys, reducing waste one wag
           at a time.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button"
-            class="btn btn-success">Recycle Now</button><button type="button" class="btn btn-outline-success">Join the Pack!</button>
+            class="btn btn-success">Recycle Now</button><button type="button" class="btn btn-outline-success">Join the
+            Pack!</button>
+        </div>
       </div>
     </div>
   </div>
@@ -84,7 +88,8 @@
         </div>
         <div class="col-md-6">
           <h4>1. Donate & Trade</h4>
-          <p>Send us your pup’s gently used toys, leashes, or gear. Earn trade credits to use on refreshed goodies.</p>
+          <p>Send us your pup’s gently used toys, leashes, or gear. Earn trade credits to use on refreshed goodies.
+          </p>
         </div>
       </div>
       <div class="row align-items-center flex-md-row-reverse mb-5">
@@ -111,31 +116,67 @@
 
   <!-- Why PupCycle -->
   <section id="why" class="bg-light py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Why PupCycle?</h2>
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="p-4 border rounded shadow-sm h-100 animate__animated animate__fadeInUp">
-            <h5>♻️ Eco-Friendly</h5>
-            <p>Every toy saved reduces waste in landfills.</p>
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Custom cards</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-1.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                    class="rounded-circle border border-white"> </li>
+                <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em" role="img"
+                    aria-label="Location">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg> <small>Earth</small> </li>
+                <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em" role="img"
+                    aria-label="Duration">
+                    <use xlink:href="#calendar3"></use>
+                  </svg> <small>3d</small> </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="p-4 border rounded shadow-sm h-100 animate__animated animate__fadeInUp">
-            <h5>🐾 Safe & Clean</h5>
-            <p>All items are professionally sanitized.</p>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                    class="rounded-circle border border-white"> </li>
+                <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em" role="img"
+                    aria-label="Location">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg> <small>Pakistan</small> </li>
+                <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em" role="img"
+                    aria-label="Duration">
+                    <use xlink:href="#calendar3"></use>
+                  </svg> <small>4d</small> </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="p-4 border rounded shadow-sm h-100 animate__animated animate__fadeInUp">
-            <h5>💸 Budget-Friendly</h5>
-            <p>High-quality play at a fraction of the cost.</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="p-4 border rounded shadow-sm h-100 animate__animated animate__fadeInUp">
-            <h5>🌎 Community Impact</h5>
-            <p>We donate extra toys to shelters in need.</p>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('images/refurb-toys.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto"> <img src="images/refurb-toys.png" alt="Bootstrap" width="32" height="32"
+                    class="rounded-circle border border-white"> </li>
+                <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em" role="img"
+                    aria-label="Location">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg> <small>California</small> </li>
+                <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em" role="img"
+                    aria-label="Duration">
+                    <use xlink:href="#calendar3"></use>
+                  </svg> <small>5d</small> </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
